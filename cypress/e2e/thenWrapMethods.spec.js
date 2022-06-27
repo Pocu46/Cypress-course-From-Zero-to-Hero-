@@ -19,7 +19,7 @@ describe('then and wrap methods work examples', ()=> {
     //   .find('[for="exampleInputPassword1"]')
     //   .should('contain', 'Password')
 
-    cy.contains('nb-card', 'Basic form')
+    cy.contains('nb-card', 'Using the Grid')
       .then(firstForm => {
         const emailLabelFirst = firstForm.find('[for="inputEmail1"]').text()
         const passwordLabelEmail = firstForm.find('[for="inputPassword2"]').text()
