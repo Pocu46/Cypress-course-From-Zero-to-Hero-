@@ -16,7 +16,7 @@ describe('lists and dropdowns tests', ()=> {
     cy.get('nav nb-select').then( dropdown => {
       cy.wrap(dropdown)
         .click()
-      cy.get('options-list nb-option')
+      cy.get('.options-list nb-option')
         .each( (listItem, index) => {
           const itemText = listItem.text().trim()
           const colors = {
