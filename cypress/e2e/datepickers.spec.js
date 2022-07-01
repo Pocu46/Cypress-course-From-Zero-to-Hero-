@@ -25,8 +25,8 @@ describe('datepickers tests', ()=> {
     cy.contains('nb-card', 'Common Datepicker').find('input').then( input => {
       cy.wrap(input).click()
       let dateAssert = selectDayFromCurrent(1)
-
       cy.wrap(input).invoke('prop', 'value').should('contain', dateAssert)
+      cy.wrap(input).should('have.value', dateAssert)      // the same as previous
     })
 
   })

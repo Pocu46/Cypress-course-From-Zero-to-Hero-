@@ -1,6 +1,6 @@
 describe('invoke commands practicing', ()=> {
 
-  it('invoke commands first practicing', ()=> {
+  it('invoke command', ()=> {
 
     cy.visit('/')
     cy.contains('Forms').click()
