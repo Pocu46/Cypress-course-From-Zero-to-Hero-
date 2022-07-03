@@ -17,7 +17,7 @@ export class NavigationPage{
 
   datepickerPage() {
     selectGroupMenuMenuItem('Forms')
-    cy.contains('Datepicker').click()
+    cy.contains('Datepicker').click({force: true})
   }
 
   toasterPage() {
